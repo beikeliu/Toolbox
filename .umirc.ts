@@ -7,6 +7,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
+    title: 'Toolbox'
   },
   routes: [
     {
@@ -20,5 +21,7 @@ export default defineConfig({
     },
   ],
   npmClient: 'pnpm',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  outputPath: 'docs',
 });
 
