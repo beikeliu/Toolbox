@@ -9,6 +9,9 @@ export default defineConfig({
   layout: {
     title: 'Toolbox'
   },
+  history: {
+    type: 'hash'
+  },
   routes: [
     {
       path: '/',
