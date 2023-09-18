@@ -1,6 +1,6 @@
 import { PageContainer } from '@ant-design/pro-components';
 import { Button, Checkbox, Form, InputNumber, Typography } from 'antd';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 const { Title } = Typography;
 
 const options = [
@@ -66,6 +66,11 @@ const Password: React.FC = () => {
     );
     setPassword(password);
   };
+  useEffect(() => {
+    setTimeout(() => {
+      submit();
+    });
+  }, []);
   return (
     <PageContainer>
       <Form
