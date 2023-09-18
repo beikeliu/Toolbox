@@ -22,6 +22,11 @@ export default defineConfig({
       path: '/home',
       component: './Home',
     },
+    {
+      name: '密码生成',
+      path: '/password',
+      component: './Password'
+    }
   ],
   npmClient: 'pnpm',
   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
